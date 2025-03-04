@@ -1,0 +1,252 @@
+* {
+    margin-top: 0px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;   
+    background: #009FB7;
+}
+
+#blogTitle {
+    font-size: 2.5rem;
+    color: #f4f4f4;
+}
+
+
+#blogWelcome {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2em;
+    background-color: #66666610;
+    color: #666;
+    margin-bottom: 0.8rem;
+    padding: 1.5rem;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+
+.container {
+    max-width: 55rem;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+
+.inputFormBody {
+    margin-bottom: 30px;
+}
+
+.inputFormBody h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.inputFormBody form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputFormBody input, .inputFormBody textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.inputFormBody button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inputFormBody button:hover {
+    background-color: #4cae4c;
+}
+
+.posts {
+    margin-top: 40px;
+}
+
+.parentPostBody {
+    background: #33333317;
+    padding: 1.25rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.625rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.164);
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.postHeader {
+    display: grid;
+    grid-template-columns: 1fr 0fr 0fr;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.likesIcon {
+    font-size: 0.7rem;
+    padding-right: 0.5rem;
+}
+
+.likesText {
+    font-weight: bold;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.likesButton {
+    font-size: 30px;
+    padding: 1px;
+    background-color: #5cb85c79;
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.likesButton:hover {
+    background-color: #c14d1fa2;
+}
+
+.likesButton:active {
+    background-color: #c11f1f;
+    transform: scale(1.1); 
+}
+
+.postHeader h3 {
+    font-size: 1.5em;
+    padding-bottom: 0.2rem;
+    color: #333;
+    padding-left: 1rem;
+}
+
+.postText {
+    background-color: #fff;
+    padding-top: 1.2rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #555;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.postFooter {
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    grid-template-columns: 0fr 1fr 1fr;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-bottom: 0.5rem;
+}
+
+.postUser {
+    font-size: 0.7rem;
+}
+
+.deleteButton {
+    background-color: #b85c5c;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    max-width: 30%;
+    min-width: 30%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+    background-color: #b34040;
+}
+
+.deleteButton i {
+    padding-left: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.postDate {
+    margin-right: 10px; 
+    font-size: 0.7rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .postHeader {
+        display: grid;
+        align-items: center;
+    }
+
+    .inputFormBody input, .inputFormBody textarea, .inputFormBody button {
+        font-size: 1.2em;
+    }
+
+    #blogTitle {
+        font-size: 2rem;
+    }
+
+    #blogWelcome {
+        font-size: 1.1em;
+        padding: 1rem;
+    }
+
+    .postHeader h3 {
+        max-width: 50%;
+        min-width: 50%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        font-size: 1rem;
+    }
+
+    .postText {
+        font-size: 1rem;
+        padding: 1.2rem;
+    }
+
+    .postFooter {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
